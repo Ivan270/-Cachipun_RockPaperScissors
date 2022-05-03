@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2.8125rem;
+  color: white;
+}
+
+h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  color: white;
+}
+
+h3 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  color: white;
+}
+
+h5 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.625rem;
+  color: #205375;
+}
+
+p {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.75rem;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 3px;
+}
+
+.user {
+  padding: 50px;
+  background-color: #112b3c;
+  grid-column: 1/7;
+  grid-row: 1/6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.user h2 {
+  margin-bottom: 20px;
+}
+.user h3 {
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.machine {
+  padding: 50px;
+  background-color: #205375;
+  grid-column: 7/13;
+  grid-row: 1/6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.machine h2 {
+  margin-bottom: 20px;
+}
+.machine h3 {
+  padding: 10px;
+  border: 2px solid white;
+}
+
+.ganador {
+  background-color: #F66B0E;
+  grid-column: span 12;
+  grid-row: 6/12;
+  display: grid;
+  place-content: center;
+}
+
+footer {
+  padding: 10px;
+  background-color: #EFEFEF;
+  grid-column: span 12;
+  grid-row: 12/13;
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*# sourceMappingURL=style.css.map */
